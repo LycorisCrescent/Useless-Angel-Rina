@@ -798,3 +798,5 @@ label Chapter2_Choice1_c:
     "Right. She somehow forgot Amadeus was one of Asmodeus' children. A shiver ran down her spine. All that flirting, how honest had he really been?"
     K.c "I'll send Yamato in, be good. Or I'll tear out a few more feathers."
     jump Yamato_Hangout_Chapter2
+label Yamato_Hangout_Chapter2:
+    ""
