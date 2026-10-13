@@ -1057,6 +1057,67 @@ label Chapter2_Scene5:
     "What a terrifying ordeal she had been caught up in, but at least she was back in her safe place. However, her mind drifted back to the three dukes. She had barely survived two, the third was softer but could that be trusted?"
     "No, that didn't matter anymore. As long as she was home, the darkness couldn't hurt her."
     return
-
-
+label Chapter3_Scene1:
+    scene clinic with fade
+    "Seven days passed by without incident. Seven days of sitting in the clinic, watching the amount of paperwork on Raphael's desk rise and fall. Seven days of impromptu visits from her fellow soldiers, including a 'Get Well' cake and a punch in the forearm, both from Ariel."
+    show rina at left
+    "She peered up at the ceiling, her legs twitching. Thoughts had been crossing her mind, ones Raphael had tried to warn her away from. But that terrifying world had been calling to her, where one step could be snow and the next could be Hell on Earth. The dukes called that world property. But why? How could they stand such a wild place?"
+    "Had the Alter World been more or less frightening than Hell? At least the abyss obeyed its own physics, each step just a little warm not temperamental. The company she was more afraid of, though the dukes resided in both worlds..."
+    "There was a knock at the door."
+    "???""Rina, are you in there?"
+    "There was Ariel, his voice tough. Her squad had a mission today. Not in the Alter World, but in the Saharan Desert. A certain archdemon that Raphael despised loved to drag himself out there to apparently rant at a rock. It wouldn't be a difficult mission, just tedious. Her 'return to duty' paperwork was delayed, however."
+    "Was that really just a clerical error or was Raphael that concerned?"
+    Ri.c "Of course I'm here, I've hardly left in a week. What's wrong?"
+    show ariel at slightleft
+    show lumia
+    show shalim at slightright
+    show shahar at right
+    "The door craned open then Ariel entered. So did Lumia. And Shalim. ... Did Ariel really bring the whole squad? No, Shahar was the last face to greet her. The room was sweltering from the sheer amount of fire angels in the room."
+    Ri.c "... Why is our squad mostly fire angels, again?"
+    "Lumia" "Eh?"
+    Ri.c "J-Just thinking out loud. What are you all doing here?"
+    "Ariel" "Lumia wouldn't leave me alone and Shahar wouldn't leave Shalim alone. We wanted to check on you."
+    "Shalim" "Ariel wanted to know if you wanted one of Azazel's teeth as a souvenir. ... I tried to stop him."
+    Ri.c "That depends... Do you have it yet?"
+    "Ariel" "Not yet, we're just on our way out."
+    Ri.c "... I would appreciate it. The only souvenir I got from the Alter World was another ban from fighting."
+    "Shahar" "How much longer do you think you'll be barred?"
+    Ri.c "As long as it takes for Lord Raphael to 'find' the paperwork. He told me he misplaced it."
+    "Lumia" "You don't seriously believe that, do you?"
+    Ri.c "Of course not. But this always happens... Something will go wrong, I'll get hospitalised, banned... I don't know if they'll let me go so easily after what happened."
+    "Shalim" "It happens to the best of us. Getting abducted by a demon is practically initiation at this point."
+    "Ariel" "Hasn't happened to me yet! But surviving a duke should be a badge of honour. Usually we retrieve the captives with less limbs..."
+    "She shivered. Maybe she was lucky after all, to get away with only some plucking and humiliation. But what would have happened if Raphael hadn't saved her?"
+    Ri.c "Awful. I don't like being cooped up here though... Is there anything I {i}can{/i} do? I'd prefer babysitting to laying around."
+    "Lumia" "Dianne's looking after Electra... Cyrus isn't still playing house husband, is he Shay?"
+    "Shalim" "Yeah, Shara still isn't old enough to be left alone. He won't accept help, though. Why don't you see if any of the other squads need help, Rina?"
+    Ri.c "I would rather not go near Michael. They scare me."
+    "Ariel" "I don't blame you. They scare me too."
+    "Lumia" "That's because you got your ass kicked by them after you got drunk and tried to {i}throw{/i} them, Ariel."
+    "Ariel" "I said I was sorry!"
+    Ri.c "... Yeah, I'm not going anywhere near Michael's squads. I'll see if I can find the paperwork, it has to be... Somewhere in there."
+    "She pointed at the evergrowing pile of paperwork on Raphael's desk and all four men cringed."
+    "Ariel" "I don't know how he ends up with all that. We'll be heading out, then."
+    "That mountain existed because of general stupidity from her fellow soldiers and angels, but she didn't voice that. Instead she nodded, swinging her legs over the side of the bed and moving to the desk."
+    Ri.c "I'll see you guys when I'm cleared. Good luck."
+    hide ariel
+    hide lumia
+    hide shalim
+    hide shahar
+    "She was left to her own devices, her body giving a shiver as she stared at the endless paperwork. How long would this take? Not as long as if she waited for Raphael to 'find' it, surely..."
+    "Her frown grew bigger the more she searched through the files, skimming the titles. Most of these were injury reports. How were such long-lived beings so accident-prone? She grimaced upon scanning one, some poor sucker had lost an ear to an angel-eating plant. Where did one even find those?"
+    "She paused as she picked up a file, noting the name listed. Did Raphael need to report his own injuries? A very famous demon was listed as the perpetrator. 'Bomb related injuries', dated several weeks ago. He had been procrastinating his own casualty report. Did he have to fill out his own 'return to work' forms?"
+    "She wracked through her memories. No, she couldn't remember his injuries. Maybe he was working without following his own policies... Wait, she could use this."
+    "Did this count as blackmail? She let out a shaky sigh and folded the document, slipping it inside her dress. She hoped this wouldn't upset him, but she couldn't stay here any longer."
+    "She wanted to go back to the Alter World."
+    jump Chapter3_Scene2
+label Chapter3_Scene2:
+    scene lake with fade
+    "Heaven had beautiful scenery outside the home of the angels."
+    "Bodies of water were not places she naturally gravitated towards, barring the hot springs. However, even the most fiery angels could not deny the marvel of a gentle shimmering lake. There was something wonderful about natural beauty residing in the kingdom of God."
+    "The air had a sweet aroma thanks to the surrounding flora, a soft breeze caressing her skin. She found him, just as she had predicted. His wings casted a golden glow onto the surface of the water, all three pairs relaxed like his posture. He was resting on the lake's bank, elbows propping his torso up while his boots dipped into the water." 
+    "There was no sun here, just Heaven's radiance bathing the sheltered landscape. One thing shone brighter than the rest, however."
+    show rina at left
+    show raphael at right
+    ri.c "Lord Raphael?"
 
