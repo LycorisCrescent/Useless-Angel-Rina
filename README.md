@@ -16,6 +16,7 @@ The second chapter is in progress.
 21st September 2026 - Created repo, first chapter done, second chapter in progress
 22nd September 2026 - Added Yamato's Hangout to Chapter 2
 23rd September 2026 - Chapter 2 finished
+13th October 2026 - Chapter 3 Scenes 1 and 2 finished
 
 ## Features
 

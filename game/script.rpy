@@ -47,6 +47,8 @@ label start:
     define Narrator = Character(None, what_italic=True)
     default Raphael_Route_Unlocked = False #set to true when the player has completed the game or entered a password 
     default Kuro_Love_Status = False #sets if Kuro falls for Rina in the common route, will affect all routes
+    default Yamato_Hangout1 = False #sets if choose to hangout with Yamato in Chapter 2
+    default Kuro_Hangout1 = False #sets if choose to hangout with Kuro in Chapter 2
 
 label Chapter1_Scene1:
     scene clinic
@@ -888,6 +890,7 @@ label Yamato_Hangout_Chapter2:
     "Being caught in the company of two members of that cursed bloodline had shook her core. Dark thoughts were still trying to creep in, shaking her handwriting as she attempted to focus."
     "However, Yamato seemed... Nice. At the very least he made this whole mess a little more bearable."
     "But how was she meant to feel about this? He was still Beelzebub's descendent at the end of the day."
+    $ yamato_hangout1 = True
     jump Chapter2_Scene5
 label Kuro_Hangout_Chapter2:
     "Time passed."
@@ -970,6 +973,7 @@ label Kuro_Hangout_Chapter2:
     Ri.c "I hope everyone's alright..."
     "All she could do now was wait. She closed her eyes, her fire magic warming her up once more. However, she could still feel Kuro's icy aura lingering."
     "Her consciousness drifted away to Dreamland. More than anything, she just wanted to be back in the clinic again."
+    $ kuro_hangout1 = True
     jump Chapter2_Scene5
 label Chapter2_Scene5:
     scene cell with fade
@@ -1120,4 +1124,67 @@ label Chapter3_Scene2:
     show rina at left
     show raphael at right
     ri.c "Lord Raphael?"
+    ra.c "Rina, what are you doing here?"
+    ri.c "I-I was looking for you."
+    "He tilted his head then grinned."
+    ra.c "Did you miss me that much?"
+    ri.c "N-No, I wanted to talk about my paperwork!"
+    ra.c "Just teasing."
+    "She sighed, her face was already burning as she gazed down at the grass. With those words and that laugh... No wonder a new rumour went around every week. She was lucky the rumour mill focused on his fellow archangels."
+    ri.c "I-I'm being serious, please hear me out. I want to go back to work. Do you really not know where my paperwork is?"
+    "He shook his head, however as his expression remained nonchalant, she realised he was no longer looking directly at her. He was looking slightly {b}past{/b} her, something she wouldn't have noticed if she didn't watch his face so much."
+    ra.c "I'm not sure, sorry. I might have filed it away under 'complete' by accident. But if I haven't signed it, it won't count."
+    ri.c "Right... Like you didn't sign your own injury report, either."
+    "His face paled, his eyes widening ever so slightly."
+    ra.c "I have no idea what you're talking about."
+    ri.c "I found it hiding with the rest of the paperwork. I-I was looking for mine, I wasn't trying to be nosy. But it was hiding under some other documents."
+    "She fished the report out from her dress, unfolding it and presenting it. Her arm trembled but his body was now rigid, not taking it but reading it from her hand."
+    ra.c "I-I can explain."
+    ri.c "Please do. I-I don't want to get you in trouble, but were you working this whole time with an injury? That's- That's against your own rules isn't it?"
+    "He exhaled, each movement stiff as he finally took the report from her and rested it on his lap. Then he pulled his coat back, her heat grew as he unfastened his collar before it crashed to iciness upon seeing the injury. His shoulder was marred by patches of darker scaled skin, she identified it immediately as a burn wound." 
+    "However, it didn't look fresh but rather more an old scar. His magic had accelerated the process but not removed it entirely."
+    ri.c "A-Asmodeus did that?"
+    ra.c "I let him get too close, usually I can counter his fire magic with my water magic but I was unlucky. I patched myself up, but if Michael found out they would have forced me to take time off."
+    ri.c "What's so bad about that? You work non-stop..."
+    "Raphael gave a sheepish chuckle, covering the injury once more and skimming his report once more."
+    ra.c "I don't mind the time off, but Uriel had a big mission coming up. If he got hurt, I wouldn't have been able to patch him up. You won't tell on me, will you?"
+    ri.c "I-If I don't, will you sort my papers out? I know you've been hiding it. You 'lose' it every time. I'm ready to leave, aren't I? I've felt ready all week."
+    ra.c "You are ready, but I was worried. I didn't want you going after that duke again. I know you have your reasons, but if I didn't get you back... I'm frightened to think what that man would have done to you."
+if kuro_hangout1:
+    "A wave of unease flowed through her, accompanied by a spark of irritation. It had been a week ago, but some remarks burned deeper than others."
+    ri.c "I don't think it would have been uh... Anything you're worrying about. He was more interested in making fun of my chest than anything. He's the opposite of a pervert. He can't talk to women at all."
+    ra.c "Oh, uh... That is a relief, but it doesn't sound like he was pleasant company regardless."
+    ri.c "Understatement... I thought I'd be stuck down there with him forever. I-I'm glad you came for me when you did."
+    "He patted her head. That unease melted away, replaced by warmth. She couldn't bear to look at him, but she {b}felt{/b} his smile. Times like this, the same thought always occurred."
+    "What did he see when he looked at her?"
+    ra.c "I couldn't just leave you there. If it wasn't me, your soldier friends would have created far more casualty reports trying to save you."
+    "She giggled. The thought of them endangering themselves was frightening, but it was a kind sentiment."
+    jump Chapter3_Scene2_Continued
+else:
+    "Nausea bubbled inside her. She didn't know Kuro well at all, what {b}would{/b} he have done to her? No, surely he wasn't that bad. Or it would have made all his bad-mouthing of Amadeus hypocritical."
+    ri.c "I-I don't know, I'm glad I didn't have to find out. I thought I would be stuck there forever."
+    "Thinking about the possibilities made her feel awfully breathless despite the fact she couldn't suffocate. How much danger had she been in?"
+    "No, she was safe now. She was with Raphael."
+    ri.c "I-I'm glad you came for me when you did."
+    "He patted her head. She was used to the motion but it felt more hesitant, in a way that was more comforting somehow. She peered up at him, the discomfort was clear on his face but he smiled anyway. She needed it."
+    ra.c "You're safe now, Rina. Believe me, the demons should be glad I came down instead of your friends. Ariel was ready to create another mountain of work for me."
+    "She anxiously giggled. It was a terrifying thought, but at least they cared. He cared."
+    jump Chapter3_Scene2_Continued
+label Chapter3_Scene2_Continued:
+    ri.c "I would rather stay away from him... But I want to get back to work. I feel useless all cooped up in the clinic. If I stay out of his territory... Will you finish my paperwork? I won't tell anyone about yours."
+    ra.c "Please don't, I'll get an earful from Michael."
+    "He rubbed his neck, sighing softly."
+    ra.c "Alright. We'll get your paperwork sorted. But I'm not letting Uriel set you any missions within Duke Kuro's territory. That's going onto your record."
+    ri.c "Permanently?"
+    ra.c "Until I know you won't get into danger again. I know you still want to get back at that whole family. I can't let you take any chances."
+    "She quietly groaned. That was to be expected. She didn't like it but... At least he didn't write her off completely."
+    "She wanted to go back to that strange world. But if she saw Kuro's banner, she would just go in the opposite direction."
+    ri.c "R-Right. Thank you."
+    ra.c "Come on, let's get back. Unless you want to sit here with me a little longer?"
+    "That was far too tempting. If she fell for that trap though, all ambition would be forgotten."
+    ri.c "I- I'm good. I want to be able to join my friends for their next mission. I'm missing Azazel making a fool of himself in the desert."
+    ra.c "That {i}is{/i} rather amusing. I wouldn't mind joining your squad for that, maybe after my workload's done I could get you an encore."
+    "That was code for 'bullying the scapegoat archdemon'. She covered her mouth, but it was too late, he could see her grinning like a jester."
+    ri.c "I can't wait."
+    return
 
