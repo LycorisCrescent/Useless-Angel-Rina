@@ -185,7 +185,7 @@ label Chapter1_Scene3:
     "Ariel" "... You're already distracted, aren't you?"
     Ri.c "Sorry."
     "Lumia turned away, covering his mouth. Despite his best efforts, his snicker was very audible."
-    "Lumia" "Let's just hurry this up. I told Dianne this would be quick." 
+    "Lumia" "Let's just hurry this up. I told Soleil this would be quick." 
     "Ariel" "You really need to stop making promises to your wife that you can't keep."
     "Lumia" "Hey, I intend to keep this one."
     "Suddenly, he halted. Rina stopped short of bumping into him, staring into the back of his head."
@@ -1060,7 +1060,7 @@ label Chapter2_Scene5:
     "She knew her smile was bashful as she nodded and closed her eyes. He tucked the blanket over her and she heard his footsteps move away. The faint sound of a quill scratching parchment allowed her thoughts to dull as she curled into herself."
     "What a terrifying ordeal she had been caught up in, but at least she was back in her safe place. However, her mind drifted back to the three dukes. She had barely survived two, the third was softer but could that be trusted?"
     "No, that didn't matter anymore. As long as she was home, the darkness couldn't hurt her."
-    return
+    jump Chapter3_Scene1
 label Chapter3_Scene1:
     scene clinic with fade
     "Seven days passed by without incident. Seven days of sitting in the clinic, watching the amount of paperwork on Raphael's desk rise and fall. Seven days of impromptu visits from her fellow soldiers, including a 'Get Well' cake and a punch in the forearm, both from Ariel."
@@ -1093,7 +1093,7 @@ label Chapter3_Scene1:
     "Ariel" "Hasn't happened to me yet! But surviving a duke should be a badge of honour. Usually we retrieve the captives with less limbs..."
     "She shivered. Maybe she was lucky after all, to get away with only some plucking and humiliation. But what would have happened if Raphael hadn't saved her?"
     Ri.c "Awful. I don't like being cooped up here though... Is there anything I {i}can{/i} do? I'd prefer babysitting to laying around."
-    "Lumia" "Dianne's looking after Electra... Cyrus isn't still playing house husband, is he Shay?"
+    "Lumia" "Soleil's looking after Electra... Cyrus isn't still playing house husband, is he Shay?"
     "Shalim" "Yeah, Shara still isn't old enough to be left alone. He won't accept help, though. Why don't you see if any of the other squads need help, Rina?"
     Ri.c "I would rather not go near Michael. They scare me."
     "Ariel" "I don't blame you. They scare me too."
@@ -1186,5 +1186,26 @@ label Chapter3_Scene2_Continued:
     ra.c "That {i}is{/i} rather amusing. I wouldn't mind joining your squad for that, maybe after my workload's done I could get you an encore."
     "That was code for 'bullying the scapegoat archdemon'. She covered her mouth, but it was too late, he could see her grinning like a jester."
     ri.c "I can't wait."
-    return
+    jump Chapter3_Scene3
+label Chapter3_Scene3:
+    scene heaven with fade
+    show rina at left
+    "The next day, Rina found herself by Heaven's gate. With her paperwork signed off, the world once again hers to explore. There were no missions in wait, but her freedom wasn't caged."
+    "As long as she stayed out of Duke Kuro's territory, she could investigate that strange world. All she had to do was not stray too far from the spawn point... Wherever that would be this time."
+    "She had her sword, her magic was fine, if everything went wrong she could call for backup. ... Maybe it would be a better idea to bring someone along, but her friends were still tired from yesterday."
+    "That desert mission had gone a little wrong, once Azazel noticed the crowd of angels watching his hysterics."
+    "She sighed, spinning her sword in her hand. She wasn't used to this thing. It was the length of her arm and made for an angel with two sets of wings to keep them balanced. That and even with magic, it had taken a while to reform after she had melted it..."
+    r.c "One day I'll shank a devil with this... Then I can give Raphael a souvenir."
+    "Unfortunately, her friends had not been able to retrieve one of Azazel's teeth for her."
+    "One of the gatekeepers watched her, his expression tired. Heaven didn't have many gatekeepers, there was no excuse for her to always forget his name. He hardly spoke, however."
+    "That wasn't going to change today. She nodded at him then returned her attention to the portal, taking a shaky breath. Where would she end up today?" 
+    "Her wings stretched and she descended down to the Alter World."
+    scene meadow with fade
+    show rina at left
+    "She found herself somewhere more floral but {b}wrong{/b}. There wasn't a cloud in the sky to block the sun, yet the plants looked like they had {b}enough{/b} sun. Even the roses were reaching the heights of the sunflowers, burying her to the waist in this meadow. What kind of super food were these plants on?"
+    "A sweet smell hung in the air, yet it made her nose itch. Each flower was wonderful on its own but all together it was overwhelming. Why was there a place like this in the Alter World?"
+    "No, there was no use questioning this strange place. The whole point was that it didn't obey logic."
+    "She peered behind her. The portal was a tiny blur, one she would struggle to see from a distance. She had to memorise this area before she strayed."
+    ri.c "What kind of creatures live here? I wonder if there's any faeries around here..."
+
 
