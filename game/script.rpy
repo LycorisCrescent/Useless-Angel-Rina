@@ -19,6 +19,11 @@ init python:
             self.corruption = corruption #affects endings, especially for Amadeus
             self.assertion = assertion #affects endings, especially for Kuro and Amadeus
 
+    class Companion:
+        def __init__(self, name, who_color):
+            self.c = Character(name, who_color=who_color)
+            self.name = name
+
     
 
 transform left:
@@ -43,6 +48,7 @@ label start:
     $ A = Love_Interest("Amadeus", "#02722d", 6, 7, 0)
     $ K = Love_Interest("Kuro", "#530363", 7, 5, 4)
     $ Ra = Love_Interest("Raphael", "#f4b507", 0, 7, 0)
+    $ C = Companion("Cato", "#bde2fb")
 
     define Narrator = Character(None, what_italic=True)
     default Raphael_Route_Unlocked = False #set to true when the player has completed the game or entered a password 
@@ -1207,5 +1213,53 @@ label Chapter3_Scene3:
     "No, there was no use questioning this strange place. The whole point was that it didn't obey logic."
     "She peered behind her. The portal was a tiny blur, one she would struggle to see from a distance. She had to memorise this area before she strayed."
     ri.c "What kind of creatures live here? I wonder if there's any faeries around here..."
+    "She stepped carefully around the flowers, tucking her wings in as she held her sword close to her body. Her eyes swept the area, the meadow stretched far but it wasn't infinite. This pocket of the Alter World went beyond this strange colourful paradise."
+    "There were homes ahead of her." 
+    "She moved quickly but silently as she committed the portal's location to memory then moved on. It would be no short stroll, the walls of the land were deep into the distance. But what lived there? There were no banners or flags to broadcast ownership."
+    "What exactly called her here? What was she hoping to get out of this weird world? The atmosphere was comforting however, a gentle breeze on her skin. Of all the areas to enter the Alter World, maybe this wasn't so bad."
+    "She took soft breaths to inhale the aroma as it seemed to focus. The further she moved, the less scents contributed to it. Now the flowers complimented each other, but they were accommodated by a new scent. One that made her hungry."
+    Ri.c "I should have brought a picnic... No, I didn't know I would end up here. I was expecting a desert, really..."
+    "When she got back though, she would ask Soleil for some apple pie. Lumia's wife was no warrior, but she was easily bribed by shiny weapons."
+    "Her brow raised as she looked around her once more, paying more attention to her lefts and rights. ... Were there walls there too? They were far more distant than the ones ahead of her, though. Who had walled off this section of the Alter World?"
+    scene ama territory with fade
+    show rina at left
+    "The terrain didn't shift as she approached the walls ahead of her, instead the land within seemed built into the existing landscape. She wasn't being transported to another pocket of the world, instead this particular pocket seemed grander than the others. Behind the gate she could see people walking on paved roads, not a town but a settlement nonetheless." 
+    "The sight of a far away mansion gave her uneasy deja vu, however. Wasn't this similar to when her squad had stormed Kuro's territory? No one was guarding it however, nor did anyone who spotted her by the entrance lunge at her. Instead they seemed... Frightened. A chill ran down her back."
+    "Where was she?"
+    "She stepped into the settlement, her hand shaking around the hilt of her sword. No one paid it any notice, even those with their own weapons. She observed their outfits, they were all dressed near identically. Shirts with ties along with trousers or skirts. Some blazers, some a little more dressed down."
+    "Those were work uniforms. Were they employed at that mansion ahead of her? She swept the area once more. The other buildings were clearly residental. This wasn't a town, this whole area was the living quarters for the domestic workers. But who owned that estate?"
+    "Her ears picked up the hurried whispers of a man as he approached a maid."
+    "Man" "Has Cato reported back yet? If that duke attacks us, we're doomed!"
+    "Maid" "He's at the mansion, he told us to stay put and don't approach any intruders."
+    "The woman looked right at her with those words and Rina tensed. She was quite the plain looking maid, yet Rina recognised the slits in her eyes. She was surrounded by demons, yet none of them were willing to bare their fangs. What kind of fear had been put into them?"
+    "Worse yet, which duke did they mean?!"
+    "She took a shaky breath, her feet trembling. They told her to go back, her mind screamed at her to obey them. None of these servants would attack her for daring to leave."
+    "So why did she want to keep pushing forward?"
+    Ri.c "E-Excuse me."
+    "As soon as she approached them, the two demons scurried away, heading towards the mansion. The other workers were rigid, gazes on the ground as they navigated around her. Were they afraid of her? No, as they returned to the safety of their homes, she caught a panicked whisper on the wind."
+    "???" "The duke's hounds are on the way!"
+    "Her life force turned to ice and she nearly collapsed on the spot. No, it couldn't be. In trying to avoid Kuro's territory, she hadn't just ended up in another territory dispute, had she?"
+    "If she ran into him on the way out of here, she would lose her head. The only thing she could do was hide." 
+    "She ran towards the mansion." 
+    scene garden with fade
+    show rina at left
+    "Once more, she was surrounded by exotic yet terrifying flora. Every side of the mansion was engulfed by this garden, a sweet scent clogged her senses as her eyes darted to take it all in. Some of these plants were taller than her, sharp thorns level with her head. Were they merely threatening or did they promise death?"
+    "She gulped, hiding in the shadow of the building as she crept along its walls. The servants had all rushed inside, barring a few braver looking guards murmuring amongst themselves. Again, the name 'Cato' came up. Who was that, another servant? Their general? She swallowed back nausea."
+    "Why did she feel like she had heard that name before?" 
+    "As she continued to hug the wall, she found herself behind the mansion, met by the beautiful, deadly posterior of the garden. Along with a sight that seized her with bitter cold as she laid eyes on two men in the distance, at the furthest end of the territory."
+    show cato at slightright
+    "The first was a demon she had never seen before, his complexion like snow and his posture crooked. The cuff around his neck initially made her ponder if he was a prisoner, however the chain was left to hang free."
+    show amadeus at right
+    "The shorter man beside him was the one who shot her pulse into a sprint, rushing in her ears as her legs trembled. Amadeus' posture was far more relaxed, his voice just barely coherent as she inched closer."
+    A.c "... Relax, Cato, we can take them. We'll send those mutts running with their tails between their legs like we always do. You're not scared, are you?"
+    "She knew that name had been familiar. Cato's expression was one of disdain as he scoffed, rolling his eyes. It only took a few seconds to realise he was the source of that unnatural cold."
+    C.c "Don't be stupid. It's the other servants, they began hyperventilating as soon as I passed the news forward. You don't want to find some more fools to replace them, do you?"
+    A.c "If they die to a few mongrels, that's that. Kuro's not taking my property, but he'll make nice fertiliser if he tries. You've never seen one of these bad boys devour a beast, have you?"
+    "Amadeus patted the stem of a nearby plant that made Rina shudder, it was large enough to consume even a giant. Its petals resembled a snout, baring a gigantic powerful jaw. There was red fluid dripping from its 'teeth'. She was afraid to question it."
+    C.c "Good luck getting a beast near it. Even the hounds aren't that brainless. Are you going to take shelter, or are you really going to hang around here while our territory is raided?"
+    "Amadeus chuckled, his expression far too peaceful for the murderous aura she could feel emitting from him. It was only making that nausea worse."
+    A.c "Nah, I'm going to take down any intruders who dare come my way. I can smell one right now."
+    "He looked her way and she suppressed a squeak, hiding around the corner. How did he- No, it was too late to wonder, she had to get out of here!"
+    
 
 
